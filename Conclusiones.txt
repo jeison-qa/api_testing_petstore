@@ -1,0 +1,45 @@
+CONCLUSIONES DEL EJERCICIO DE AUTOMATIZACIÓN API REST PETSTORE
+
+1. DESARROLLO DEL EJERCICIO
+
+Se desarrollaron pruebas automatizadas para la API REST Petstore utilizando Karate DSL, Java 17, Maven y JUnit 5.
+
+El ejercicio contempla las operaciones de creación, consulta, actualización y eliminación de usuarios, incluyendo una consulta posterior a la actualización para verificar el nombre y el correo modificados.
+
+2. VALIDACIONES REALIZADAS
+
+Las pruebas implementadas incluyen validaciones de las respuestas HTTP y de los datos retornados por el servicio.
+
+Para la consulta del usuario actualizado, se verifica que el nombre y el correo coincidan con los valores enviados en la actualización.
+
+También se valida la respuesta de eliminación y, de acuerdo con el escenario implementado, el resultado de la consulta posterior.
+
+3. RESULTADOS OBTENIDOS
+
+En la ejecución registrada durante el desarrollo se obtuvieron los siguientes resultados:
+
+- Casos de prueba ejecutados: 4.
+- Casos aprobados: 4.
+- Casos fallidos: 0.
+- Errores reportados: 0.
+- Porcentaje de aprobación: 100 % de los casos ejecutados.
+
+El porcentaje corresponde exclusivamente a los cuatro casos automatizados ejecutados y no representa la cobertura total de la API.
+
+4. HALLAZGOS Y APRENDIZAJES
+
+El ejercicio permitió practicar el envío de solicitudes HTTP, el manejo de datos JSON, la definición de variables, la creación de aserciones y la organización de escenarios de prueba en archivos .feature.
+
+También permitió utilizar Maven para ejecutar las pruebas y Karate para consultar los resultados mediante un reporte HTML.
+
+La consulta posterior a la actualización es importante porque permite verificar que los cambios se reflejen en los datos recuperados por la API, y no solamente en la respuesta inmediata de la operación PUT.
+
+5. CONCLUSIONES FINALES
+
+La automatización desarrollada permite repetir las validaciones implementadas y revisar sus resultados de forma estructurada.
+
+La documentación de ejecución facilita que otra persona pueda descargar el repositorio, ejecutar las pruebas y consultar las evidencias.
+
+Como consideración, Petstore es una API pública de demostración, por lo que su disponibilidad y comportamiento pueden afectar la reproducibilidad de los resultados.
+
+El ejercicio cumple con el alcance de las operaciones solicitadas, de acuerdo con los escenarios implementados y la ejecución registrada.
