@@ -1,4 +1,4 @@
-PROYECTO: AUTOMATIZACIÓN DE PRUEBAS DE API REST PETSTORE
+**PROYECTO: AUTOMATIZACIÓN DE PRUEBAS DE API REST PETSTORE**
 
 OBJETIVO
 
@@ -11,7 +11,7 @@ https://petstore.swagger.io/
 URL base del servicio:
 https://petstore.swagger.io/v2
 
-HERRAMIENTAS UTILIZADAS
+**HERRAMIENTAS UTILIZADAS**
 
 Java JDK 17.
 
@@ -23,7 +23,7 @@ JUnit 5 para integrar la ejecución de Karate.
 
 Visual Studio Code como editor de código.
 
-REQUISITOS PREVIOS
+**REQUISITOS PREVIOS**
 
 Antes de ejecutar el proyecto, se debe tener instalado Java 17 y Maven, además de disponer de conexión a internet.
 
@@ -35,7 +35,7 @@ Verificar Maven:
 
 mvn -version
 
-ESTRUCTURA DEL PROYECTO
+**ESTRUCTURA DEL PROYECTO**
 
 El proyecto contiene los siguientes elementos:
 
@@ -45,19 +45,19 @@ src/test/java/PetstoreTest.java: clase encargada de iniciar las pruebas.
 
 src/test/resources/features/: carpeta con los archivos de pruebas automatizadas.
 
-TC_001_CrearUsuario.feature: prueba de creación de usuario.
+**TC_001_CrearUsuario.feature:** prueba de creación de usuario.
 
-TC_002_ConsultarUsuario.feature: preparación y consulta del usuario.
+**TC_002_ConsultarUsuario.feature:** preparación y consulta del usuario.
 
-TC_003_ActualizarUsuario.feature: actualización del nombre y correo, seguida de la consulta del usuario actualizado.
+**TC_003_ActualizarUsuario.feature:** actualización del nombre y correo, seguida de la consulta del usuario actualizado.
 
-TC_004_EliminarUsuario.feature: preparación y eliminación del usuario.
+**TC_004_EliminarUsuario.feature:** preparación y eliminación del usuario.
 
 readme.txt: instrucciones de ejecución.
 
 conclusiones.txt: hallazgos y conclusiones del ejercicio.
 
-OPERACIONES SOLICITADAS
+**OPERACIONES SOLICITADAS**
 
 Las operaciones del enunciado se cubren de la siguiente manera:
 
@@ -73,7 +73,7 @@ Eliminar el usuario: TC_004_EliminarUsuario.feature.
 
 Algunos escenarios preparan los datos necesarios dentro del mismo archivo para poder ejecutar sus validaciones.
 
-ENTRADAS, VARIABLES Y VALIDACIONES
+**ENTRADAS, VARIABLES Y VALIDACIONES**
 
 Las solicitudes utilizan datos de usuario en formato JSON, como identificador, nombre de usuario, nombre, apellido, correo, contraseña, teléfono y estado.
 
@@ -89,7 +89,7 @@ Verificación del nombre y el correo actualizados.
 
 Validación de la respuesta de eliminación y de la consulta posterior, según el escenario implementado.
 
-PASOS PARA EJECUTAR EL PROYECTO
+**PASOS PARA EJECUTAR EL PROYECTO**
 
 Paso 1. Descargar o clonar el repositorio público de GitHub.
 
@@ -105,23 +105,28 @@ Paso 5. Esperar a que Maven termine la ejecución.
 
 Paso 6. Revisar en la terminal el resultado de las pruebas y comprobar si existen fallos o errores.
 
-CONSULTA DE REPORTES
+**CONSULTA DE REPORTES**
 
-Después de ejecutar las pruebas, consultar el reporte resumen de Karate en:
+Después de ejecutar las pruebas automatizadas, Karate genera los reportes en la siguiente ruta:
 
 target/karate-reports/karate-summary.html
 
+Adicionalmente, en este repositorio se incluye una copia de los reportes generados, disponible en la carpeta reportes/. El reporte resumen se encuentra en:
+
+reportes/karate-summary.html
+
 Abrir el archivo con un navegador para revisar los resultados de la ejecución.
 
-Para entregar evidencias en GitHub, incluir una copia del reporte generado y sus archivos auxiliares necesarios dentro de una carpeta de evidencias o reportes.
+Para entregar evidencias en GitHub, incluir una copia del reporte generado y sus archivos auxiliares
+ necesarios dentro de una carpeta de evidencias o reportes.
 
-RESULTADOS DE REFERENCIA
+**RESULTADOS DE REFERENCIA**
 
 Durante la ejecución realizada en el desarrollo del ejercicio se reportaron cuatro pruebas con resultado PASS, sin fallos ni errores.
 
 Este resultado corresponde a la ejecución registrada y no garantiza que futuras ejecuciones de la API pública obtengan necesariamente los mismos resultados.
 
-PUBLICACIÓN Y REPRODUCCIÓN
+**PUBLICACIÓN Y REPRODUCCIÓN**
 
 El proyecto debe estar disponible en un repositorio público de GitHub.
 
